@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Green Habbit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Green Habbit Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you</p>
+    </section>
+
+    <section class="contact-container">
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" action="php/contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="rooftop">Rooftop Solar</option>
+                        <option value="park">Solar Park</option>
+                        <option value="pump">Solar Pump</option>
+                        <option value="geyser">Solar Geyser</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formMessage"></div>
+        </div>
+
+        <div class="contact-info">
+            <h2>Our Offices</h2>
+            <div class="office">
+                <h3>Head Office - Indore</h3>
+                <p>Phone: 8770261130</p>
+            </div>
+            <div class="office">
+                <h3>Shivpuri Office</h3>
+                <p>Main Ghoda Chauraha, Shivpuri, MP</p>
+                <p>Phone: 9630175855</p>
+            </div>
+            <div class="office">
+                <h3>Mhow Office</h3>
+                <p>Phone: 9713162956</p>
+            </div>
+            <div class="office">
+                <h3>Pichore Office</h3>
+                <p>Phone: 9131567211</p>
+            </div>
+            <div class="office">
+                <h3>Email</h3>
+                <p>habittgreen@gmail.com</p>
+            </div>
+            <div class="office">
+                <h3>Website</h3>
+                <p>www.greenhabbit.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>Find Us on Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.3258920717512!2d77.64232520000002!3d25.427366000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3970bf902db20de3%3A0x2d67e6c3f51c1e7d!2sGreen%20Habbitt%20%7CSolar%20panel%20%7C%20Solar%20Inverter%20%7C%20Solar%20pump%20%7C%20Solar%20street%20lights%20%7C%20Residential%20%7CCommercial%20%7CIndustrial%20Solar!5e0!3m2!1sen!2sin!4v1751036521952!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"     </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: habittgreen@gmail.com</p>
+                <p>Website: www.greenhabbit.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Green Habbit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
